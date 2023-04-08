@@ -25,6 +25,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-padding-top: 0;
   scroll-behavior: smooth;
 }
 
@@ -139,6 +140,11 @@ header .header-2.active {
   right: 0;
   left: 0;
   z-index: 10;
+}
+
+.header-2-white {
+  height: 0rem;
+  transition: 0s;
 }
 
 .bottom-navbar {
@@ -256,7 +262,7 @@ header .header-2.active {
 }
 
 .home {
-  background: url(../image/banner-bg.jpg) no-repeat;
+  background: url(../img/banner-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -301,4 +307,33 @@ header .header-2.active {
   color: var(--light-color);
   font-size: 1.4rem;
   line-height: 2;
+}
+
+.icons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.icons-container .icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.icons-container .icons i {
+  color: var(--green);
+  font-size: 3.5rem;
+}
+
+.icons-container .icons h3 {
+  padding-bottom: 0.5rem;
+  color: var(--black);
+  font-size: 2.2rem;
+}
+
+.icons-container .icons p {
+  color: var(--light-color);
+  font-size: 1.4rem;
 }

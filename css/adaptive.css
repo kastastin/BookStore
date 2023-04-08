@@ -67,4 +67,8 @@
   html {
     font-size: 50%;
   }
+
+  .icons-container .icons {
+    margin-left: 3rem;
+  }
 }
