@@ -14,6 +14,27 @@ const changeModalVisibility = function () {
   overlay.classList.toggle("hidden");
 };
 
+// <-- Swiper -->
+const swiper = new Swiper(".books-slider", {
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 9500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
+
 // <-- Events -->
 window.addEventListener("scroll", function () {
   searchForm.classList.remove("active");

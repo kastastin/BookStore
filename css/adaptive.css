@@ -6,6 +6,10 @@
   header .header-1 {
     padding: 2rem;
   }
+
+  section {
+    padding: 3rem 2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -48,6 +52,14 @@
     top: 115%;
     opacity: 1;
     transition: 1s;
+  }
+
+  .home .row .content {
+    text-align: center;
+  }
+
+  .home .row .content h3 {
+    font-size: 3.5rem;
   }
 }
 
