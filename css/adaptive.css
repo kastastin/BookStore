@@ -61,6 +61,15 @@
   .home .row .content h3 {
     font-size: 3.5rem;
   }
+
+  .newsletter {
+    background-position: top left;
+  }
+
+  .newsletter form {
+    max-width: 100%;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 450px) {
