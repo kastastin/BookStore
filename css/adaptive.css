@@ -7,9 +7,31 @@
     padding: 2rem;
   }
 
-  section {
+  section,
+  footer {
     padding: 3rem 2rem;
   }
+
+  footer {
+    padding-bottom: 0;
+  }
+
+  footer .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  footer .box-container .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+  }
+
+  /* footer .box-container .box h3 {
+    text-align: center;
+  } */
 }
 
 @media (max-width: 768px) {

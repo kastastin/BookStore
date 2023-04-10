@@ -29,7 +29,8 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
+section,
+footer {
   padding: 5rem 9%;
 }
 
@@ -640,4 +641,94 @@ header .header-2.active {
   color: var(--light-color);
   font-size: 1.4rem;
   line-height: 2;
+}
+
+footer {
+  padding-bottom: 0;
+}
+
+footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+footer .box-container .box h3 {
+  padding: 1rem 0;
+  color: var(--black);
+  font-size: 2.2rem;
+}
+
+footer .box-container .box a {
+  display: block;
+  padding: 1rem 0;
+  color: var(--light-color);
+  font-size: 1.4rem;
+}
+
+footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--green);
+}
+
+footer .box-container .box a span:hover i {
+  padding-right: 1.2rem;
+}
+
+footer .box-container .box .map {
+  width: 100%;
+}
+
+footer .share {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer .share a {
+  height: 5rem;
+  width: 5rem;
+  margin: 0 0.3rem;
+  background: var(--green);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 5rem;
+}
+
+footer .share a:hover {
+  background: var(--black);
+}
+
+footer .credit {
+  margin-top: 2rem;
+  padding: 2.5rem 1rem;
+  border-top: var(--border);
+  color: var(--light-color);
+  font-size: 2rem;
+  text-align: center;
+}
+
+footer .credit span {
+  color: var(--green);
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-container.disable {
+  display: none;
+}
+
+.loader-container img {
+  height: 10rem;
 }

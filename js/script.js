@@ -4,6 +4,7 @@ const home = document.querySelector(".home");
 const searchForm = document.querySelector(".search-form");
 const searchBtn = document.querySelector("#search-btn");
 const loginForm = document.querySelector(".login-form-container");
+const loader = document.querySelector(".loader-container");
 
 const toggleActiveHeader = function () {
   if (window.scrollY > 80) {
@@ -22,6 +23,12 @@ const changeModalVisibility = function () {
   overlay.classList.toggle("hidden");
 };
 
+const disableLoader = function () {
+  setTimeout(() => {
+    loader.classList.add("disable");
+  }, 2000);
+};
+
 // <-- Events -->
 window.addEventListener("scroll", function () {
   toggleActiveHeader();
@@ -29,6 +36,7 @@ window.addEventListener("scroll", function () {
 });
 
 window.addEventListener("load", function () {
+  disableLoader();
   toggleActiveHeader();
 });
 
